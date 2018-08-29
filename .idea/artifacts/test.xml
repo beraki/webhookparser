@@ -1,0 +1,35 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="test">
+    <output-path>$PROJECT_DIR$/out/artifacts/test</output-path>
+    <root id="archive" name="test.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="library" level="project" name="Gradle: com.google.code.gson:gson:2.8.5" />
+      <element id="module-output" name="info.beraki.webhookparser_main" />
+      <element id="library" level="project" name="Gradle: org.apache.httpcomponents:httpclient:4.5.2" />
+      <element id="library" level="project" name="Gradle: org.apache.httpcomponents:httpcore:4.4.4" />
+      <element id="library" level="project" name="Gradle: com.sparkjava:spark-core:2.5.5" />
+      <element id="library" level="project" name="Gradle: org.json:json:20090211" />
+      <element id="library" level="project" name="Gradle: ch.qos.logback:logback-classic:1.1.7" />
+      <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
+      <element id="library" level="project" name="Gradle: commons-codec:commons-codec:1.9" />
+      <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.20" />
+      <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-webapp:9.3.6.v20151106" />
+      <element id="library" level="project" name="Gradle: org.eclipse.jetty.websocket:websocket-server:9.3.6.v20151106" />
+      <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-servlet:9.3.6.v20151106" />
+      <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-security:9.3.6.v20151106" />
+      <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-server:9.3.6.v20151106" />
+      <element id="library" level="project" name="Gradle: org.eclipse.jetty.websocket:websocket-servlet:9.3.6.v20151106" />
+      <element id="library" level="project" name="Gradle: ch.qos.logback:logback-core:1.1.7" />
+      <element id="library" level="project" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" />
+      <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-http:9.3.6.v20151106" />
+      <element id="library" level="project" name="Gradle: org.eclipse.jetty.websocket:websocket-client:9.3.6.v20151106" />
+      <element id="library" level="project" name="Gradle: org.eclipse.jetty.websocket:websocket-common:9.3.6.v20151106" />
+      <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-io:9.3.6.v20151106" />
+      <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-xml:9.3.6.v20151106" />
+      <element id="library" level="project" name="Gradle: org.eclipse.jetty.websocket:websocket-api:9.3.6.v20151106" />
+      <element id="library" level="project" name="Gradle: org.eclipse.jetty:jetty-util:9.3.6.v20151106" />
+    </root>
+  </artifact>
+</component>
