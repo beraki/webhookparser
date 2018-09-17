@@ -22,7 +22,6 @@ public class SlackMessageBuilder {
         attachments.setFallback(customMessage);
         attachments.setPretext(customMessage);
         attachments.setFields(fieldsList);
-        //TODO: Parse severity
         attachments.setColor(severity);
 
         attachmentsList.add(attachments);

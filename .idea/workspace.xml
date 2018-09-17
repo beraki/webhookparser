@@ -7,55 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93bda1a6-d57f-47d5-b874-765d9a0d0fcd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileChanges/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileChanges/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/annotation-processors.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/MessageType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/Attachments.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/Attachments.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/Fields.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/Fields.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/SlackMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/SlackMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/SlackMessageBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/SlackMessageBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/info.beraki.webhookparser-all-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/info.beraki.webhookparser-all-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/info.beraki.webhookparser.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/info.beraki.webhookparser.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/fatJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/fatJar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webhookparser/webhookparser.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webhookparser/webhookparser.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/info/beraki/webhookparser/Attachments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/info/beraki/webhookparser/Fields.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/info/beraki/webhookparser/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/info/beraki/webhookparser/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/info/beraki/webhookparser/SlackMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/info/beraki/webhookparser/SlackMessageBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Attachments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/Attachments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Fields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/Fields.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/SlackMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/SlackMessageBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/SlackMessageBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/SlackMessageBuilder.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -179,30 +135,31 @@
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.24" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="763" />
+          <entry key="java" value="1649" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="763" />
+          <entry key="JAVA" value="1649" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="3" />
-          <entry key="java" value="3" />
+          <entry key="java" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="3" />
+          <entry key="JAVA" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -212,8 +169,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="186" column="26" lean-forward="true" selection-start-line="186" selection-start-column="26" selection-end-line="186" selection-end-column="26" />
+            <state relative-caret-position="240">
+              <caret line="274" column="59" selection-start-line="274" selection-start-column="59" selection-end-line="274" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -221,8 +178,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/SlackMessageBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="165">
+              <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -230,8 +187,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Util.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
+            <state relative-caret-position="60">
               <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/MessageType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -239,7 +205,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/SlackMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
+            <state>
               <caret column="52" selection-start-column="52" selection-end-column="52" />
             </state>
           </provider>
@@ -248,7 +214,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/Attachments.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
+            <state relative-caret-position="180">
               <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -260,7 +226,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/Fields.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="90">
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
@@ -272,6 +238,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -696,6 +663,8 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/Attachments.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/SlackMessageBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/MessageType.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Main.java" />
       </list>
     </option>
@@ -713,8 +682,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="60" />
-    <option name="y" value="200" />
+    <option name="x" value="164" />
+    <option name="y" value="194" />
     <option name="width" value="1334" />
     <option name="height" value="691" />
   </component>
@@ -724,9 +693,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -770,7 +739,7 @@
     <property name="SearchEverywhereHistoryKey" value="{&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537170413583" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537184865414" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../blog-project-api" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -971,11 +940,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="60" y="200" width="1334" height="691" extended-state="0" />
+    <frame x="164" y="194" width="1334" height="691" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.113354035" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.30481285" visible="true" weight="0.22127329" />
+      <window_info active="true" id="Structure" order="1" sideWeight="0.69518715" side_tool="true" visible="true" weight="0.22127329" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -984,17 +953,17 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49917355" weight="0.27807486" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4984472" visible="true" weight="0.27807486" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286219" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32798573" />
       <window_info active="true" anchor="bottom" id="Build" order="7" visible="true" weight="0.38607594" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.40998217" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5008264" side_tool="true" weight="0.32508835" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.40998217" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015528" side_tool="true" weight="0.27807486" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32685512" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32976827" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24958678" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1087,37 +1056,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/Fields.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="240">
+          <caret line="274" column="59" selection-start-line="274" selection-start-column="59" selection-end-line="274" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/SlackMessageBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="165">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
+        <state relative-caret-position="60">
           <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/MessageType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/SlackMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
+        <state>
           <caret column="52" selection-start-column="52" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/Attachments.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
+        <state relative-caret-position="180">
           <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1125,10 +1101,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/Fields.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="186" column="26" lean-forward="true" selection-start-line="186" selection-start-column="26" selection-end-line="186" selection-end-column="26" />
+        <state relative-caret-position="90">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
