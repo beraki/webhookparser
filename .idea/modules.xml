@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/info.beraki.webhookparser.iml" filepath="$PROJECT_DIR$/.idea/modules/info.beraki.webhookparser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/info.beraki.webhookparser_main.iml" filepath="$PROJECT_DIR$/.idea/modules/info.beraki.webhookparser_main.iml" group="info.beraki.webhookparser" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/info.beraki.webhookparser_test.iml" filepath="$PROJECT_DIR$/.idea/modules/info.beraki.webhookparser_test.iml" group="info.beraki.webhookparser" />
+    </modules>
+  </component>
+</project>
