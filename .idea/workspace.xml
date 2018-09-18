@@ -7,11 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93bda1a6-d57f-47d5-b874-765d9a0d0fcd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/MessageType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/info/beraki/webhookparser/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/info/beraki/webhookparser/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/SlackMessageBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/SlackMessageBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/MessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/MessageType.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -142,12 +139,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1649" />
+          <entry key="java" value="2524" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1649" />
+          <entry key="JAVA" value="2524" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -169,8 +166,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="274" column="59" selection-start-line="274" selection-start-column="59" selection-end-line="274" selection-end-column="59" />
+            <state relative-caret-position="129">
+              <caret line="225" lean-forward="true" selection-start-line="225" selection-end-line="225" />
             </state>
           </provider>
         </entry>
@@ -189,15 +186,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/MessageType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -682,8 +670,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="164" />
-    <option name="y" value="194" />
+    <option name="x" value="163" />
+    <option name="y" value="192" />
     <option name="width" value="1334" />
     <option name="height" value="691" />
   </component>
@@ -739,7 +727,7 @@
     <property name="SearchEverywhereHistoryKey" value="{&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537184865414" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537253037738" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../blog-project-api" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -940,11 +928,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="164" y="194" width="1334" height="691" extended-state="0" />
+    <frame x="163" y="192" width="1334" height="691" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.30481285" visible="true" weight="0.22127329" />
-      <window_info active="true" id="Structure" order="1" sideWeight="0.69518715" side_tool="true" visible="true" weight="0.22127329" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.30513597" visible="true" weight="0.22127329" />
+      <window_info id="Structure" order="1" sideWeight="0.69486403" side_tool="true" visible="true" weight="0.22127329" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -953,13 +941,13 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4984472" visible="true" weight="0.27807486" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4984472" weight="0.27807486" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32798573" />
       <window_info active="true" anchor="bottom" id="Build" order="7" visible="true" weight="0.38607594" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.40998217" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.40998217" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015528" side_tool="true" weight="0.27807486" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32685512" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -1056,31 +1044,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="274" column="59" selection-start-line="274" selection-start-column="59" selection-end-line="274" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/SlackMessageBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/MessageType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1105,6 +1072,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/MessageType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="225" lean-forward="true" selection-start-line="225" selection-end-line="225" />
         </state>
       </provider>
     </entry>

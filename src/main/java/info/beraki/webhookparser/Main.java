@@ -1,6 +1,6 @@
 package info.beraki.webhookparser;
 
-import info.beraki.webhookparser.SlackMessageModel.SlackMessage;
+import com.google.gson.JsonObject;
 import info.beraki.webhookparser.SlackMessageModel.SlackMessageBuilder;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
@@ -13,7 +13,6 @@ import org.json.JSONObject;
 import spark.Spark;
 
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.util.logging.Logger;
 
 import static spark.Spark.before;
@@ -28,7 +27,8 @@ public class Main {
     String s=null;
     static HttpResponse response=null;
     static String slackMessage = null;
-    String postUrl = "https://hooks.slack.com/services/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";// put in your url
+    final static String SLACK_URL = "SLACK_HERE";
+    final static String DEV_SLACK_URL = "SLACK_HERE";
 
     public static void main(String[] args){
 
@@ -40,86 +40,82 @@ public class Main {
         }
 
 
-        //http://ec2-34-238-50-223.compute-1.amazonaws.com:8000/webhook/papertrail
-        Spark.post("/webhook/papertrail", (req, res) -> { // post/LIMIT
+        Spark.post("/webhook/testing", (req, res) -> {
+            String serviceName="Papertrail";
 
-            String rawRequest=req.body();
+            String toReturn=null;
+            try{
+                String rawRequestData = req.body();
+                JSONObject rawRequestJSON = new JSONObject(rawRequestData);
+                MessageType messageType = getMessageType(rawRequestJSON);
 
-            try {
-
-                JSONObject jsonObject=new JSONObject(rawRequest);
-
-
-                if(jsonObject.has("page") && jsonObject.has("components") && jsonObject.has("component_update")) {
-                    String statusIndicator = jsonObject.getJSONObject("page").getString("status_indicator");
-                    String statusDesc = jsonObject.getJSONObject("page").getString("status_description");
-
-                    String componentName= jsonObject.getJSONObject("components").getString("name");
-                    String componentStatus= jsonObject.getJSONObject("component_update").getString("old_status");
-                    String componentNewStatus= jsonObject.getJSONObject("component_update").getString("new_status");
-
-                    slackMessage= SlackMessageBuilder.build("*Papertail Status Page Update* \n*"
-                                    + statusDesc +"* "+
-                                    "`"+ componentStatus +" ---> "+ componentNewStatus +"`",
-                            getCrutialCode(statusIndicator),
-                            componentName,
-                            statusDesc);
+                if (messageType.equals(MessageType.COMPONENT)) {
+                    String componentMessage = prepareComponentMessage(rawRequestJSON, serviceName);
+                    toReturn=sendWebhookToSlack(SLACK_URL, componentMessage);
+                } else if (messageType.equals(MessageType.INCIDENT)){
+                    String incidentMessage=prepareIncidentMessage(rawRequestJSON, serviceName);
+                    toReturn=sendWebhookToSlack(SLACK_URL, incidentMessage);
+                }else if(messageType.equals(MessageType.UNKNOWN)){
+                    sendBerakiAnAngryMessage(DEV_SLACK_URL,rawRequestJSON);
                 }
-
-                if(jsonObject.has("page") && jsonObject.has("incident")) {
-                    String statusIndicator = jsonObject.getJSONObject("page").getString("status_indicator");
-                    String statusDesc = jsonObject.getJSONObject("page").getString("status_description");
-
-                    String incidentName= jsonObject.getJSONObject("incident").getString("name");
-                    String incidentStatus= jsonObject.getJSONObject("incident").getString("status");
-                    JSONArray incidentUpdates=jsonObject.getJSONObject("incident").getJSONArray("incident_updates");
-                    String incidentUpdateFormattedText="";
-                    if(incidentUpdates.length() != 0){
-                        for(int i=0; i < incidentUpdates.length() && i < NOOFINCIDENTS; i++){
-                            JSONObject incidentUpdateObject= incidentUpdates.getJSONObject(i);
-                            String incidentStatusStage= incidentUpdateObject.getString("status");
-                            String incidentStatusBody= incidentUpdateObject.getString("body");
-                            incidentUpdateFormattedText += "*"+incidentStatusStage+"-* " + incidentStatusBody +"\n";
-                        }
-                    }
-
-
-                    slackMessage= SlackMessageBuilder.build("Papertail Status Page Update",
-                            getCrutialCode(statusIndicator),
-                            "*"+ incidentName +"* `"+statusDesc+"`",
-                                        incidentUpdateFormattedText);
-                }
-
-
-                String postUrlZinaWorkspace = "https://hooks.slack.com/services/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";// put in your url
-                String postUrl= "SLACK HOOK HERE";
-
-
-                CloseableHttpClient httpClient = HttpClientBuilder.create().build();
-                HttpPost post = new HttpPost(postUrlZinaWorkspace);
-                StringEntity postingString;
-                if(slackMessage != null){
-                    postingString = new StringEntity(slackMessage);//gson.tojson() converts your pojo to json
-                }else{
-                   postingString = new StringEntity(SlackMessageBuilder.build("Papertail Status Page Update *Unknown*",
-                           "warning",
-                           "Unknown",
-                           "```@Beraki messed up somewhere and he is notified. \nPlease check "+
-                           "http://www.papertrailstatus.com```"));
-
-                   sendBerakiAnAngryMessage(jsonObject);
-                }
-                    post.setEntity(postingString);
-                    post.setHeader("Content-type", "application/json");
-                    response = httpClient.execute(post);
-
-
-                    LOGGER.warning(response.getStatusLine().getStatusCode()+"");
             }catch(Exception e){
                 e.printStackTrace();
+                toReturn = "Issue parsing data";
             }
-            res.status(200);
-            return "Thanks for the webhook";
+
+            return toReturn;
+        });
+
+        Spark.post("/webhook/bitbucket", (req, res) -> {
+            String serviceName="BitBucket";
+
+            String toReturn=null;
+            try{
+                String rawRequestData = req.body();
+                JSONObject rawRequestJSON = new JSONObject(rawRequestData);
+                MessageType messageType = getMessageType(rawRequestJSON);
+
+                if (messageType.equals(MessageType.COMPONENT)) {
+                    String componentMessage = prepareComponentMessage(rawRequestJSON, serviceName);
+                    toReturn=sendWebhookToSlack(SLACK_URL, componentMessage);
+                } else if (messageType.equals(MessageType.INCIDENT)){
+                    String incidentMessage=prepareIncidentMessage(rawRequestJSON, serviceName);
+                    toReturn=sendWebhookToSlack(SLACK_URL, incidentMessage);
+                }else if(messageType.equals(MessageType.UNKNOWN)){
+                    sendBerakiAnAngryMessage(DEV_SLACK_URL,rawRequestJSON);
+                }
+            }catch(Exception e){
+                e.printStackTrace();
+                toReturn = "Issue parsing data";
+            }
+
+            return toReturn;
+        });
+
+        Spark.post("/webhook/talkdesk", (req, res) -> {
+            String serviceName="Talkdesk";
+
+            String toReturn=null;
+            try{
+                String rawRequestData = req.body();
+                JSONObject rawRequestJSON = new JSONObject(rawRequestData);
+                MessageType messageType = getMessageType(rawRequestJSON);
+
+                if (messageType.equals(MessageType.COMPONENT)) {
+                    String componentMessage = prepareComponentMessage(rawRequestJSON, serviceName);
+                    toReturn=sendWebhookToSlack(SLACK_URL, componentMessage);
+                } else if (messageType.equals(MessageType.INCIDENT)){
+                    String incidentMessage=prepareIncidentMessage(rawRequestJSON, serviceName);
+                    toReturn=sendWebhookToSlack(SLACK_URL, incidentMessage);
+                }else if(messageType.equals(MessageType.UNKNOWN)){
+                    sendBerakiAnAngryMessage(DEV_SLACK_URL,rawRequestJSON);
+                }
+            }catch(Exception e){
+                e.printStackTrace();
+                toReturn = "Issue parsing data";
+            }
+
+            return toReturn;
         });
 
         options("/*", (request, response) -> {
@@ -163,14 +159,14 @@ public class Main {
     }
 
 
-    private static void sendBerakiAnAngryMessage(JSONObject jsonObject) throws IOException {
-        String postUrlZinaWorkspace = "SLACK HOOK HERE";// put in your url
+    private static void sendBerakiAnAngryMessage(String DEV_SLACK_URL,JSONObject jsonObject) throws IOException {
+
 
         CloseableHttpClient httpClient = HttpClientBuilder.create().build();
-        HttpPost post = new HttpPost(postUrlZinaWorkspace);
+        HttpPost post = new HttpPost(DEV_SLACK_URL);
         StringEntity postingString;
 
-        postingString = new StringEntity(SlackMessageBuilder.build("Papertail Status Page Update *Error in json Formatting*",
+        postingString = new StringEntity(SlackMessageBuilder.build("*Error in json Formatting*",
                 "warning",
                 "Unknown",
                 "```"+jsonObject+"```"));
@@ -180,44 +176,7 @@ public class Main {
         HttpResponse response = httpClient.execute(post);
     }
 
-
-    public static String sendSlackWebhook(String SLACK_URL, String rawRequest){
-        try {
-
-            JSONObject reqRawJSONObject=new JSONObject(rawRequest);
-
-            MessageType messasageType=checkOutMessageType(reqRawJSONObject);
-
-
-            if(messasageType.equals(MessageType.COMPONENT)){
-                slackMessage=prepareComponentMessage(reqRawJSONObject);
-            }else if(messasageType.equals(MessageType.INCIDENT)){
-                slackMessage=prepareIncidentMessage(reqRawJSONObject);
-            }
-
-
-            if(slackMessage != null)
-                sendWebhookToSlack(SLACK_URL, slackMessage);
-            else{
-                slackMessage = SlackMessageBuilder.build("Papertail Status Page Update *Unknown*",
-                        "warning",
-                        "Unknown",
-                        "```@Beraki messed up somewhere and he is notified. \nPlease check "+
-                                "http://www.papertrailstatus.com```");
-                sendWebhookToSlack(SLACK_URL,slackMessage);
-                sendBerakiAnAngryMessage(reqRawJSONObject);
-            }
-
-
-            LOGGER.warning(response.getStatusLine().getStatusCode()+"");
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-        //res.status(200);
-        return "Thanks for the webhook";
-    }
-
-    private static String prepareIncidentMessage(JSONObject reqRawJSONObject) throws JSONException {
+    private static String prepareIncidentMessage(JSONObject reqRawJSONObject, String serviceName) throws JSONException {
         String statusIndicator = reqRawJSONObject.getJSONObject("page").getString("status_indicator");
         String statusDesc = reqRawJSONObject.getJSONObject("page").getString("status_description");
 
@@ -234,7 +193,7 @@ public class Main {
         }
 
 
-        String slackMessage= SlackMessageBuilder.build("Papertail Status Page Update",
+        String slackMessage= SlackMessageBuilder.build("*"+serviceName+" Status Page Update*",
                 getCrutialCode(statusIndicator),
                 "*"+ incidentName +"* `"+statusDesc+"`",
                 incidentUpdateFormattedText);
@@ -243,7 +202,7 @@ public class Main {
     }
 
 
-    private static String prepareComponentMessage(JSONObject reqRawJSONObject) throws JSONException {
+    private static String prepareComponentMessage(JSONObject reqRawJSONObject, String serviceName) throws JSONException {
         String statusIndicator = reqRawJSONObject.getJSONObject("page").getString("status_indicator");
         String statusDesc = reqRawJSONObject.getJSONObject("page").getString("status_description");
 
@@ -251,7 +210,7 @@ public class Main {
         String componentStatus= reqRawJSONObject.getJSONObject("component_update").getString("old_status");
         String componentNewStatus= reqRawJSONObject.getJSONObject("component_update").getString("new_status");
 
-        String slackMessage= SlackMessageBuilder.build("*Papertail Status Page Update* \n*"
+        String slackMessage= SlackMessageBuilder.build("*"+serviceName+" Status Page Update* \n*"
                         + statusDesc +"* "+
                         "`"+ componentStatus +" ---> "+ componentNewStatus +"`",
                 getCrutialCode(statusIndicator),
@@ -274,10 +233,11 @@ public class Main {
 
         return response.getStatusLine().getStatusCode()+"";
     }
-    private static MessageType checkOutMessageType(JSONObject reqRawJSONObject) {
-        MessageType toReturn=null;
+    private static MessageType getMessageType(JSONObject reqRawJSONObject) {
+        MessageType toReturn=MessageType.UNKNOWN;
         if(reqRawJSONObject.has("page") &&
-                reqRawJSONObject.has("component") && reqRawJSONObject.has("component_update")) {
+                reqRawJSONObject.has("component") &&
+                reqRawJSONObject.has("component_update")) {
             toReturn = MessageType.COMPONENT;
         }else if(reqRawJSONObject.has("page") && reqRawJSONObject.has("incident")) {
             toReturn = MessageType.INCIDENT;
