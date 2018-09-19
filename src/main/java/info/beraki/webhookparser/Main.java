@@ -27,8 +27,8 @@ public class Main {
     String s=null;
     static HttpResponse response=null;
     static String slackMessage = null;
-    final static String SLACK_URL = "SLACK_HERE";
-    final static String DEV_SLACK_URL = "SLACK_HERE";
+    final static String SLACK_URL = "SLACK URL HERE";
+    final static String DEV_SLACK_URL = "SLACK URL HERE";
 
     public static void main(String[] args){
 
@@ -92,8 +92,8 @@ public class Main {
             return toReturn;
         });
 
-        Spark.post("/webhook/talkdesk", (req, res) -> {
-            String serviceName="Talkdesk";
+        Spark.post("/webhook/atlassian", (req, res) -> {
+            String serviceName="Atlassian Suite";
 
             String toReturn=null;
             try{

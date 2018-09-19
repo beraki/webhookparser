@@ -7,8 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93bda1a6-d57f-47d5-b874-765d9a0d0fcd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/Attachments.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/Fields.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/SlackMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/SlackMessageBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/info/beraki/webhookparser/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/info.beraki.webhookparser-all-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/info.beraki.webhookparser-all-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/info.beraki.webhookparser.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/fatJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/fatJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webhookparser/webhookparser.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/info/beraki/webhookparser/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/info/beraki/webhookparser/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/MessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/MessageType.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -134,28 +154,33 @@
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.24" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.70" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2524" />
+          <entry key="gradle" value="5" />
+          <entry key="java" value="2575" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2524" />
+          <entry key="Groovy" value="5" />
+          <entry key="JAVA" value="2575" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="3" />
+          <entry key="gradle" value="3" />
           <entry key="java" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
+          <entry key="Groovy" value="3" />
           <entry key="JAVA" value="4" />
         </counts>
       </usages-collector>
@@ -166,8 +191,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="225" lean-forward="true" selection-start-line="225" selection-end-line="225" />
+            <state relative-caret-position="285">
+              <caret line="37" column="28" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -445,9 +479,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6147486464000" />
+        <entry key="$PROJECT_DIR$" value="6147957703000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="1553987393" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1106837473" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2585518924" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="2647918489" />
       </map>
@@ -648,12 +682,12 @@
         <option value="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Model/SlackMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Model/SlackMessageBuilder.java" />
         <option value="$PROJECT_DIR$/../webhook/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/Attachments.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/SlackMessageModel/SlackMessageBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/MessageType.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Main.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -669,11 +703,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="163" />
-    <option name="y" value="192" />
-    <option name="width" value="1334" />
-    <option name="height" value="691" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="180" />
+    <option name="y" value="141" />
+    <option name="width" value="1682" />
+    <option name="height" value="774" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -681,15 +715,53 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="info.beraki.webhookparser" type="b2602c69:ProjectViewProjectNode" />
               <item name="webhookparser" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="info.beraki.webhookparser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webhookparser" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="info.beraki.webhookparser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webhookparser" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="info.beraki.webhookparser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webhookparser" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="info.beraki.webhookparser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webhookparser" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="info.beraki.webhookparser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webhookparser" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="tmp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="info.beraki.webhookparser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webhookparser" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="info.beraki.webhookparser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webhookparser" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="info.beraki.webhookparser" type="b2602c69:ProjectViewProjectNode" />
@@ -721,13 +793,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="{&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537253037738" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537268278798" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../blog-project-api" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -756,7 +830,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.webhookparser [fatJar]">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="10" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -785,24 +859,6 @@
         <option name="taskNames">
           <list>
             <option value="buildDependents" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method v="2" />
-    </configuration>
-    <configuration name="WebHookParser [buildNeeded]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="buildNeeded" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -863,6 +919,24 @@
       </ExternalSystemSettings>
       <method v="2" />
     </configuration>
+    <configuration name="webhookparser [fatJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="fatJar" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -880,18 +954,18 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Gradle.WebHookParser [build]" />
-      <item itemvalue="Gradle.WebHookParser [buildNeeded]" />
       <item itemvalue="Gradle.WebHookParser [buildDependents]" />
       <item itemvalue="Gradle.WebHookParser [jar]" />
       <item itemvalue="Gradle.WebHookParser [fatJar]" />
+      <item itemvalue="Gradle.webhookparser [fatJar]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.webhookparser [fatJar]" />
         <item itemvalue="Gradle.WebHookParser [fatJar]" />
         <item itemvalue="Gradle.WebHookParser [jar]" />
         <item itemvalue="Gradle.WebHookParser [build]" />
         <item itemvalue="Gradle.WebHookParser [buildDependents]" />
-        <item itemvalue="Gradle.WebHookParser [buildNeeded]" />
       </list>
     </recent_temporary>
   </component>
@@ -928,11 +1002,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="163" y="192" width="1334" height="691" extended-state="0" />
+    <frame x="180" y="141" width="1682" height="774" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.30513597" visible="true" weight="0.22127329" />
-      <window_info id="Structure" order="1" sideWeight="0.69486403" side_tool="true" visible="true" weight="0.22127329" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.65591395" visible="true" weight="0.2616137" />
+      <window_info id="Structure" order="1" sideWeight="0.34408602" side_tool="true" visible="true" weight="0.2616137" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -941,24 +1015,24 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4984472" weight="0.27807486" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4984472" visible="true" weight="0.27795032" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32798573" />
-      <window_info active="true" anchor="bottom" id="Build" order="7" visible="true" weight="0.38607594" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.40998217" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32763976" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.38607594" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3167702" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015528" side_tool="true" weight="0.27807486" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32685512" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32976827" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32919255" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24958678" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.30181542" />
-      <window_info anchor="right" id="Gradle" order="6" weight="0.35950413" />
+      <window_info anchor="right" id="Gradle" order="6" visible="true" weight="0.1106357" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -1037,10 +1111,10 @@
     <entry file="file://$USER_HOME$/Desktop/Main.class" />
     <entry file="file://$USER_HOME$/Desktop/Attachments.class" />
     <entry file="file://$USER_HOME$/Desktop/SlackMessageBuilder.class" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/MessageType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="33" />
+        <state relative-caret-position="45">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1048,6 +1122,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1075,24 +1156,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/MessageType.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/beraki/webhookparser/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="225" lean-forward="true" selection-start-line="225" selection-end-line="225" />
+        <state relative-caret-position="285">
+          <caret line="37" column="28" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
         </state>
       </provider>
     </entry>
