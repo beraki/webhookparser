@@ -79,7 +79,7 @@ public class Main {
     }
 
 
-    private static String getCrutialCode(String statusIndicator) {
+    public static String getCrutialCode(String statusIndicator) {
         String toReturn="warning";
 
         if(statusIndicator.equals("none")){
@@ -96,9 +96,7 @@ public class Main {
     }
 
 
-    private static void sendBerakiAnAngryMessage(String DEV_SLACK_URL,JSONObject jsonObject) throws IOException {
-
-
+    public static void sendBerakiAnAngryMessage(String DEV_SLACK_URL,JSONObject jsonObject) throws IOException {
         CloseableHttpClient httpClient = HttpClientBuilder.create().build();
         HttpPost post = new HttpPost(DEV_SLACK_URL);
         StringEntity postingString;
@@ -113,7 +111,7 @@ public class Main {
         HttpResponse response = httpClient.execute(post);
     }
 
-    private static String prepareIncidentMessage(JSONObject reqRawJSONObject, String serviceName) throws JSONException {
+    public static String prepareIncidentMessage(JSONObject reqRawJSONObject, String serviceName) throws JSONException {
         String statusIndicator = reqRawJSONObject.getJSONObject("page").getString("status_indicator");
         String statusDesc = reqRawJSONObject.getJSONObject("page").getString("status_description");
 
@@ -139,7 +137,7 @@ public class Main {
     }
 
 
-    private static String prepareComponentMessage(JSONObject reqRawJSONObject, String serviceName) throws JSONException {
+    public static String prepareComponentMessage(JSONObject reqRawJSONObject, String serviceName) throws JSONException {
         String statusIndicator = reqRawJSONObject.getJSONObject("page").getString("status_indicator");
         String statusDesc = reqRawJSONObject.getJSONObject("page").getString("status_description");
 
@@ -168,7 +166,7 @@ public class Main {
 
         return response.getStatusLine().getStatusCode();
     }
-    private static MessageType getMessageType(JSONObject reqRawJSONObject) {
+    public static MessageType getMessageType(JSONObject reqRawJSONObject) {
         MessageType toReturn=MessageType.UNKNOWN;
         if(reqRawJSONObject.has("page") &&
                 reqRawJSONObject.has("component") &&
@@ -181,8 +179,7 @@ public class Main {
         return toReturn;
     }
 
-
-    private static String parserMyRequest(Request req, String serviceName){
+    public static String parserMyRequest(Request req, String serviceName){
         String toReturn=null;
         Integer statusCode;
         try{
@@ -193,7 +190,7 @@ public class Main {
             if (messageType.equals(MessageType.COMPONENT)) {
                 String componentMessage = prepareComponentMessage(rawRequestJSON, serviceName);
                 statusCode=sendWebhookToSlack(SLACK_URL, componentMessage);
-                toReturn = "Webhook returned with status code" + statusCode;
+                toReturn = "Webhook returned with status code " + statusCode;
             } else if (messageType.equals(MessageType.INCIDENT)){
                 String incidentMessage=prepareIncidentMessage(rawRequestJSON, serviceName);
                 statusCode=sendWebhookToSlack(SLACK_URL, incidentMessage);
