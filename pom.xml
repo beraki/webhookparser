@@ -4,7 +4,7 @@
   <groupId>info.beraki</groupId>
   <artifactId>webhookparser</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.1</version>
   <name>webhookparser</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -67,6 +67,28 @@
           <target>1.8</target>
         </configuration>
       </plugin>
+    <plugin>
+      <artifactId>maven-assembly-plugin</artifactId>
+      <configuration>
+        <archive>
+          <manifest>
+            <mainClass>info.beraki.Main</mainClass>
+          </manifest>
+        </archive>
+        <descriptorRefs>
+          <descriptorRef>all</descriptorRef>
+        </descriptorRefs>
+      </configuration>
+      <executions>
+        <execution>
+          <id>make-assembly</id> <!-- this is used for inheritance merges -->
+          <phase>package</phase> <!-- bind to the packaging phase -->
+          <goals>
+            <goal>single</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
     </plugins>
   </build>
 </project>
