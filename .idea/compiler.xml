@@ -9,8 +9,5 @@
         <module name="webhookparser" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="webhookparser" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

@@ -12,18 +12,18 @@ node {
             bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
         }
     }
-    stage('Install') {
-        // Run the maven build
-        if (isUnix()) {
-            sh "mvn install"
-        } else {
-            bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
-        }
-    }
     stage('Test') {
         // Run the maven build
         if (isUnix()) {
             sh "mvn test"
+        } else {
+            bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
+        }
+    }
+    stage('Install') {
+        // Run the maven build
+        if (isUnix()) {
+            sh "mvn clean install"
         } else {
             bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
         }
