@@ -4,10 +4,10 @@ node {
         // Get some code from a GitHub repository
         git 'https://github.com/samritbk/webhookparser.git'
     }
-    stage('Clean') {
+    stage('Build (Install)') {
         // Run the maven build
         if (isUnix()) {
-            sh "mvn clean"
+            sh "mvn install"
         } else {
             bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
         }
@@ -16,14 +16,6 @@ node {
         // Run the maven build
         if (isUnix()) {
             sh "mvn test"
-        } else {
-            bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
-        }
-    }
-    stage('Install') {
-        // Run the maven build
-        if (isUnix()) {
-            sh "mvn clean install"
         } else {
             bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
         }
