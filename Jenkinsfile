@@ -1,6 +1,6 @@
+pipeline{
 node {
     def mvnHome
-    pipeline{
     agent {
         docker {
             image 'maven:3-alpine'
