@@ -1,5 +1,13 @@
 node {
     def mvnHome
+    pipeline{
+    agent {
+        docker {
+            image 'maven:3-alpine'
+            args '-v $HOME/.m2:/root/.m2'
+        }
+    }
+    stages {
     stage('Preparation') { // for display purposes
         // Get some code from a GitHub repository
         git 'https://github.com/samritbk/webhookparser.git'
@@ -23,5 +31,7 @@ node {
     stage('Results') {
         junit '**/target/surefire-reports/TEST-*.xml'
         archive 'target/*.jar'
+    }
+    }
     }
 }
