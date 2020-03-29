@@ -1,4 +1,10 @@
 node {
+    agent {
+        docker {
+            image 'maven:3-alpine'
+            args '-v $HOME/.m2:/root/.m2'
+        }
+    }
     def mvnHome
     stage('Preparation') { // for display purposes
         // Get some code from a GitHub repository
